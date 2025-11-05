@@ -105,3 +105,33 @@ body {
     background-attachment: fixed;
     background-position: center top;
 }
+
+.artist-bio-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.artist-image {
+    width: 150px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.artist-bio-text {
+    flex: 1;
+}
+
+@media (max-width: 576px) {
+    .artist-bio-container {
+        flex-direction: column;
+    }
+
+    .artist-image {
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+}

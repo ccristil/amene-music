@@ -86,7 +86,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Christian Perez</h5>
                             <p class="card-text">A group of musicians bringing traditional Polynesian instruments into the modern era with fusion tracks that honor their roots.</p>
-                            <a href="#" class="btn btn-primary">View Profile</a>
+                            <a data-bs-toggle="modal" data-bs-target="#modal1" class="btn btn-primary">View Profile</a>
                         </div>
                     </div>
                 </div>
@@ -163,5 +163,12 @@
             </div>
         </div>
     </footer>
+    <div id="modal-container"></div>
+    <script>
+        // Load modals
+        fetch('modals.html')
+            .then(response => response.text())
+            .then(html => document.getElementById('modal-container').innerHTML += html);
+    </script>
 </body>
 </html>

@@ -106,32 +106,26 @@ body {
     background-position: center top;
 }
 
+.modal-dialog {
+    max-width: 700px; /* Adjust this value as needed */
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
 .artist-bio-container {
     display: flex;
+    flex-direction: column;
     gap: 20px;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .artist-image {
-    width: 150px;
-    height: 100%;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 12px;
-    flex-shrink: 0;
 }
 
 .artist-bio-text {
-    flex: 1;
-}
-
-@media (max-width: 576px) {
-    .artist-bio-container {
-        flex-direction: column;
-    }
-
-    .artist-image {
-        width: 100%;
-        max-width: 200px;
-        margin: 0 auto;
-    }
+    width: 100%;
 }

@@ -53,6 +53,16 @@ body {
     margin-bottom: 60px;
 }
 
+.profile-btn {
+    background-color: #FF9E01;
+    color: white;
+}
+
+.profile-btn:hover {
+    background-color: #E88900;
+    color:white;
+}
+
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
     color: var(--bs-secondary-color);
     text-align: end;
